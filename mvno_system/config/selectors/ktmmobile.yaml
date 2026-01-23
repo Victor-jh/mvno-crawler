@@ -1,0 +1,9 @@
+selectors:
+  list:
+    item_card: 'a.rate-info__wrap'
+    plan_name: 'strong'
+    data: 'ul li:nth-child(1) div p:first-child'
+    voice: 'ul li:nth-child(2) div p:first-child'
+    price: 'div:last-child b:last-of-type'
+    
+  url: "https://www.ktmmobile.com/rate/rateList.do"

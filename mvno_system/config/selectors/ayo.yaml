@@ -1,0 +1,11 @@
+selectors:
+  list:
+    item_card: '.col-md-12:has(span.x13)' # Playwright allows :has()
+    plan_name: 'span.x13'
+    carrier_img: 'img' # alt attribute
+    data: '.textcolor3' # 텍스트 추출 필요 (월 10G + 1Mbps)
+    price: '.textcolor1 span'
+    
+  # 상세 페이지 접근이 필요할 경우 사용
+  detail:
+    container: 'body'

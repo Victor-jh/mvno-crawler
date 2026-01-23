@@ -1,0 +1,10 @@
+schedules:
+  phoneb:
+    cron: "0 */12 * * *"  # 매 12시간마다 (00:00, 12:00)
+    enabled: true
+    description: "폰비 정기 크롤링"
+  
+  # 추후 추가될 플랫폼 예시
+  # alttelecomhub:
+  #   cron: "30 2 * * *"  # 매일 02:30
+  #   enabled: false

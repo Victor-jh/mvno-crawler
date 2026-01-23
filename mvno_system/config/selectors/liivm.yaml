@@ -1,0 +1,9 @@
+selectors:
+  list:
+    item_card: '.card_item'
+    plan_name: '.item_tit'
+    data: '.icon_data + span'
+    voice: '.icon_call + span'
+    price: '.item_price strong'
+    
+  url: "https://m.liivm.com/rateplan/plans/products"

@@ -1,0 +1,21 @@
+selectors:
+  list:
+    item_card: 'a.plan-item'
+    plan_name: '.name'
+    carrier_badge: 'span.badge.mno'
+    # Data often in .spec-box .data p.free -> confirmed .data .free
+    data: '.spec-box .data p.free'
+    # Voice in .spec-box .call p.free
+    voice: '.spec-box .call p.free'
+    # Price
+    price_regular: '.price-box .basic-price'
+    price_promo: '.price-box .current-price'
+    
+    # Navigation/Filters
+    # Filters use onclick, so we might need to rely on text or specific attributes
+    # But crawler will try to click elements with text matching carrier name
+    filter_skt: 'a[onclick*="tag=skt"]'
+    filter_kt: 'a[onclick*="tag=kt"]'
+    filter_lgu: 'a[onclick*="tag=lgt"]'
+    
+  url: "https://www.eyagi.co.kr/shop/plan/list.php?tag=pick"

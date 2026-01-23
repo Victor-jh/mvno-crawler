@@ -1,0 +1,13 @@
+selectors:
+  list:
+    item_card: '.popularDataItem'
+    plan_name: '.infoTxt .title'
+    carrier_input: 'input#linkBrndNm' # Hidden input value
+    data: '.infoBox dl:nth-child(1) dd'
+    voice: '.infoBox dl:nth-child(2) dd'
+    sms: '.infoBox dl:nth-child(3) dd'
+    price: '.infoTxt .price strong'
+    
+  # 상세 페이지 접근이 필요할 경우 사용
+  detail:
+    container: '#frm' 

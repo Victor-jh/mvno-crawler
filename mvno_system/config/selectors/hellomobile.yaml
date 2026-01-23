@@ -1,0 +1,10 @@
+selectors:
+  list:
+    item_card: 'li.list-item'
+    plan_name: '.plan-rate-name'
+    data: '.plan-title h2'
+    voice: '.sub-info span:nth-of-type(3)'
+    price: '.m-price'
+    more_btn: '#moreBtn'
+    
+  url: "https://direct.lghellovision.net/rate/rateViewUsim.do"

@@ -1,0 +1,14 @@
+selectors:
+  list:
+    item_card: 'a.click-guard[href*="/product/products/"]'
+    plan_name: 'p.tit'
+    carrier: 'div.cp_info ul li:last-child'  # 두 번째 li가 사업자명
+    network: 'div.cp_info ul li:first-child' # 첫 번째 li가 망사업자(KT 등)
+    price: 'div.price span'
+    data: 'dl:has(dt:contains("데이터")) dd' # Playwright 확장 셀렉터 사용 가능 확인 필요, 안되면 JS로 처리
+    voice: 'dl:has(dt:contains("통화")) dd'
+    sms: 'dl:has(dt:contains("문자")) dd'
+    
+  # 상세 페이지 (추후 구현 시 필요)
+  detail:
+    container: 'div.product_view'

@@ -1,0 +1,29 @@
+selectors:
+  list:
+    item_card: '.plan-area'
+    plan_name: '.plan-name'
+    # Data is in .basic-data
+    data: '.basic-data'
+    # Voice is in .add-call-text
+    voice: '.add-call-text'
+    # SMS is in .add-message-text
+    sms: '.add-message-text'
+    
+    # Price
+    # Promo price (current)
+    price_promo: '.real-price'
+    # Original price
+    price_original: '.strikethrough'
+    
+    # Carrier
+    # .plan-head-content span:first-child
+    carrier_badge: '.plan-head-content span:first-child'
+
+    # Filter
+    # Select box #telecom
+    filter_select: '#telecom'
+    
+    # Popup close
+    popup_close: '.main-popup .close-btn, .btn-close'
+    
+  url: "https://www.amobile.co.kr/plannew"

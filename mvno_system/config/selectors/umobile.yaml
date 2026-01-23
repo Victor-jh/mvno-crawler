@@ -1,0 +1,9 @@
+selectors:
+  list:
+    item_card: 'div.price-card-list > ul > li'
+    plan_name: 'strong.pln-tit'
+    data: 'span.pln-spc'
+    voice: 'p.pln-txt'
+    price: 'div.price-box strong.dc'
+    
+  url: "https://www.uplusumobile.com/product/pric/usim/pricList"

@@ -1,0 +1,8 @@
+selectors:
+  list:
+    item_card: 'a[href^="/plans/"]:not([href*="search"])'
+    # 구조가 복잡하므로 JS로 추출하는 것이 유리함. 아래는 참조용이나 JS 내에서 동적으로 사용할 예정
+    # Moyo는 클래스명이 tailwind 등으로 자주 바뀔 수 있어 구조 기반(nth-child)이나 텍스트 포함 여부로 찾는 전략 사용
+    plan_name_fallback: 'div:nth-child(2) > div:nth-child(1) > span'
+    data_fallback: 'div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > span'
+    price_fallback: 'div:nth-child(2) > div:nth-child(3) span:nth-of-type(1)'

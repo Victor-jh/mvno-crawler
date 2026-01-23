@@ -1,0 +1,9 @@
+selectors:
+  list:
+    item_card: 'a.planItem'
+    plan_name: 'strong.name-area span.name'
+    data: 'ul.service li:nth-child(1)'
+    voice: 'ul.service li:nth-child(2)' # 기본제공 / 100분 등
+    price: '.price .data-price strong'
+    
+  url: "https://www.sk7mobile.com/prod/data/callingPlanList.do?refCode=USIM"

@@ -1,0 +1,22 @@
+selectors:
+  list:
+    item_card: 'li.card_list_item'
+    plan_name: '.tit_card'
+    # Data/Voice/SMS in list_rate_info li
+    data: '.list_rate_info li:nth-child(1)'
+    voice: '.list_rate_info li:nth-child(2)'
+    sms: '.list_rate_info li:nth-child(3)'
+    
+    # Price
+    # Promo price (current)
+    price_promo: '.price_after'
+    # Original price
+    price_original: '.price_before'
+    # Price note (e.g. 7개월 이후...)
+    price_note: '.price_after_info'
+    
+    # Carrier
+    # Sugar Mobile is LGU+ only
+    carrier_fixed: 'LGU+'
+
+  url: "https://www.sugarmobile.co.kr/rate_plan.do"

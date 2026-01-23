@@ -1,0 +1,34 @@
+selectors:
+  list:
+    item_card: '.callplan-list__listbox'
+    plan_name: '.name'
+    # Data is in .data
+    data: '.data'
+    # Voice is in .voice
+    voice: '.voice'
+    # SMS is in .sms
+    sms: '.sms'
+    
+    # Price
+    # Promo price (current)
+    price_promo: '.price .sum strong'
+    # Original price
+    price_original: '.price .costprice'
+    
+    # Carrier
+    # .chip-area div has classes chip-skt, chip-kt, chip-lgt
+    carrier_chip: '.chip-area div'
+
+    # Navigation/Filters
+    # Tabs for carrier
+    filter_skt: 'li.filter__li.network:has-text("SKT")'
+    filter_kt: 'li.filter__li.network:has-text("KT")'
+    filter_lgu: 'li.filter__li.network:has-text("LG U+")'
+    
+    # More button
+    more_btn: '.page-more__btn, .i-btn-more'
+    
+    # Popup close
+    popup_close: '.all-close__btn'
+    
+  url: "https://www.mobing.co.kr/product/plan/telecom"

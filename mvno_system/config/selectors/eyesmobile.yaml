@@ -1,0 +1,22 @@
+selectors:
+  list:
+    item_card: '.payplan-info-list li'
+    plan_name: '.tit'
+    # Data is in .data
+    data: '.data'
+    # Voice is in .provide .call span
+    voice: '.provide .call span'
+    # Price is in .price strong (current price)
+    price: '.price strong'
+    # Original price
+    price_original: '.origin-price span:first-child'
+    
+    # Navigation
+    # Button to view all plans (initially it shows 'best')
+    view_all_btn: '.cal-nav li.all a'
+    # Load more button
+    more_btn: 'button.btn-type3'
+    # Carrier filter select
+    carrier_select: 'select.select-style1'
+    
+  url: "https://www.eyes.co.kr/payplan/info2"

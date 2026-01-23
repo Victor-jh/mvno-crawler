@@ -1,0 +1,26 @@
+selectors:
+  list:
+    item_card: 'div.plan'
+    # Plan Name: First li > p
+    plan_name: 'ul > li:first-child > p'
+    
+    # Carrier: Top badge
+    carrier_badge: 'div > p:first-child'
+    
+    # Details in nested ul
+    data: 'ul > li:first-child > ul > li:nth-child(1) > p'
+    voice: 'ul > li:first-child > ul > li:nth-child(2) > p'
+    sms: 'ul > li:first-child > ul > li:nth-child(3) > p'
+    
+    # Price
+    # Second li in main ul contains price info paragraphs
+    price_container: 'ul > li:nth-child(2)'
+    
+    # Navigation/Filters
+    tab_postpaid: '#btnPostpay'
+    tab_prepaid: '#btnPrepay'
+    filter_all: '#btnAll'
+    filter_lgu: '#btnLGU'
+    filter_kt: '#btnKT'
+    
+  url: "https://asiamobile.kr/view/price/pricePlan.aspx"

@@ -1,0 +1,8 @@
+selectors:
+  list:
+    item_card: '.plan_item.ticket'
+    plan_name: '.plan_tit'
+    carrier_img: '.partner img'  # alt 속성 사용
+    data: '.plan_tit_sub'
+    voice: '.phone'
+    price: '.month'

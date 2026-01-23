@@ -1,0 +1,21 @@
+selectors:
+  # 목록 페이지
+  list:
+    item_card: 'a[href^="/detail/"]'
+    filter_open_btn: 'button:has-text("필터")'
+    carrier_tab: 'li:has-text("통신사")'
+    network_tab: 'li:has-text("통신기술")'
+    sort_btn: 'button:has-text("추천순")'
+    result_count: 'a:has-text("결과보기")'
+    next_page_btn: 'button:has-text("다음")'
+    
+  # 상세 페이지
+  detail:
+    carrier_img: 'article img[alt*="모바일"]'
+    plan_name: '._1sdiozaf'
+    data_info: '._1sdiozag'
+    price_regular: '._1sdiozam'  # 여러 개일 수 있음
+    discount_info: '._1sdiozal'
+    spec_list: 'ul._1cu5fqi0 li'
+    gift_info: '.t7cdf70 p.t7cdf76'
+    usim_info_container: 'article p'

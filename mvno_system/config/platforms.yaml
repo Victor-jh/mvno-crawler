@@ -1,0 +1,230 @@
+platforms:
+  phoneb:
+    name: "폰비"
+    base_url: "https://www.phoneb.co.kr"
+    enabled: true
+    priority: 1
+    description: "알뜰폰 요금제 비교 플랫폼"
+    selectors_file: "config/selectors/phoneb.yaml"
+    module: "crawlers.phoneb_crawler"
+    class: "PhonebCrawler"
+    
+  alttelecomhub:
+    name: "알뜰폰허브"
+    base_url: "https://www.mvnohub.kr"
+    enabled: true
+    priority: 2
+    description: "한국정보통신진흥협회 운영 허브 사이트"
+    selectors_file: "config/selectors/alttelecomhub.yaml"
+    module: "crawlers.alttelecomhub_crawler"
+    class: "HubCrawler"
+
+  moyo:
+    name: "모요"
+    base_url: "https://www.moyoplan.com"
+    enabled: true
+    priority: 3
+    description: "모두의 요금제"
+    selectors_file: "config/selectors/moyo.yaml"
+    module: "crawlers.moyo_crawler"
+    class: "MoyoCrawler"
+
+  aldoot:
+    name: "알닷"
+    base_url: "https://www.uplusmvno.com"
+    enabled: true
+    priority: 4
+    description: "LG U+ 공식 알뜰폰 파트너스"
+    selectors_file: "config/selectors/aldoot.yaml"
+    module: "crawlers.aldoot_crawler"
+    class: "AldootCrawler"
+
+  mymvno:
+    name: "마이알뜰폰"
+    base_url: "https://ktmyr.com"
+    enabled: true
+    priority: 5
+    description: "KT 공식 알뜰폰 파트너스"
+    selectors_file: "config/selectors/mymvno.yaml"
+    module: "crawlers.mymvno_crawler"
+    class: "MyMvnoCrawler"
+    
+  ayo:
+    name: "아요"
+    base_url: "https://www.weayo.com"
+    enabled: true
+    priority: 6
+    description: "알뜰폰 요금제 비교 아요"
+    selectors_file: "config/selectors/ayo.yaml"
+    module: "crawlers.ayo_crawler"
+    class: "AyoCrawler"
+
+  sk7mobile:
+    name: "SK세븐모바일"
+    base_url: "https://www.sk7mobile.com"
+    enabled: true
+    priority: 7
+    description: "SK 7mobile 공식몰"
+    selectors_file: "config/selectors/sk7mobile.yaml"
+    module: "crawlers.sk7mobile_crawler"
+    class: "SK7MobileCrawler"
+
+  ktmmobile:
+    name: "KT엠모바일"
+    base_url: "https://www.ktmmobile.com"
+    enabled: true
+    priority: 8
+    description: "KT M모바일 공식몰"
+    selectors_file: "config/selectors/ktmmobile.yaml"
+    module: "crawlers.ktmmobile_crawler"
+    class: "KTMobileCrawler"
+
+  skylife:
+    name: "스카이라이프"
+    base_url: "https://shop.skylife.co.kr"
+    enabled: true
+    priority: 9
+    description: "KT스카이라이프 공식몰"
+    selectors_file: "config/selectors/skylife.yaml"
+    module: "crawlers.skylife_crawler"
+    class: "SkylifeCrawler"
+
+  umobile:
+    name: "U+유모바일"
+    base_url: "https://www.uplusumobile.com"
+    enabled: true
+    priority: 10
+    description: "U+유모바일 공식몰"
+    selectors_file: "config/selectors/umobile.yaml"
+    module: "crawlers.umobile_crawler"
+    class: "UMobileCrawler"
+
+  hellomobile:
+    name: "헬로모바일"
+    base_url: "https://direct.lghellovision.net"
+    enabled: true
+    priority: 11
+    description: "LG헬로모바일 공식몰"
+    selectors_file: "config/selectors/hellomobile.yaml"
+    module: "crawlers.hellomobile_crawler"
+    class: "HelloMobileCrawler"
+
+  liivm:
+    name: "리브모바일"
+    base_url: "https://www.liivm.com"
+    enabled: true
+    priority: 12
+    description: "KB국민은행 리브모바일"
+    selectors_file: "config/selectors/liivm.yaml"
+    module: "crawlers.liivm_crawler"
+    class: "LiivMCrawler"
+
+  tossmobile:
+    name: "토스모바일"
+    base_url: "https://tossmobile.co.kr"
+    enabled: true
+    priority: 13
+    description: "토스모바일 공식몰"
+    selectors_file: "config/selectors/tossmobile.yaml"
+    module: "crawlers.tossmobile_crawler"
+    class: "TossMobileCrawler"
+
+  freet:
+    name: "프리티"
+    base_url: "https://www.freet.co.kr"
+    enabled: true
+    priority: 14
+    description: "프리티 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/freet.yaml"
+    module: "crawlers.freet_crawler"
+    class: "FreeTCrawler"
+
+  tplusmobile:
+    name: "티플러스"
+    base_url: "https://www.tplusmobile.com"
+    enabled: true
+    priority: 15
+    description: "티플러스 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/tplus.yaml"
+    module: "crawlers.tplus_crawler"
+    class: "TplusCrawler"
+
+  eyesmobile:
+    name: "아이즈모바일"
+    base_url: "https://www.eyes.co.kr"
+    enabled: true
+    priority: 16
+    description: "아이즈모바일 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/eyesmobile.yaml"
+    module: "crawlers.eyesmobile_crawler"
+    class: "EyesMobileCrawler"
+
+  eyagi:
+    name: "이야기모바일"
+    base_url: "https://www.eyagi.co.kr"
+    enabled: true
+    priority: 17
+    description: "이야기모바일 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/eyagi.yaml"
+    module: "crawlers.eyagi_crawler"
+    class: "EyagiCrawler"
+
+  mobing:
+    name: "모빙"
+    base_url: "https://www.mobing.co.kr"
+    enabled: true
+    priority: 18
+    description: "모빙 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/mobing.yaml"
+    module: "crawlers.mobing_crawler"
+    class: "MobingCrawler"
+
+  egmobile:
+    name: "이지모바일"
+    base_url: "https://www.egmobile.co.kr"
+    enabled: true
+    priority: 19
+    description: "이지모바일 (KT/LGU+)"
+    selectors_file: "config/selectors/egmobile.yaml"
+    module: "crawlers.egmobile_crawler"
+    class: "EgMobileCrawler"
+
+  amobile:
+    name: "에이모바일"
+    base_url: "https://www.amobile.co.kr"
+    enabled: true
+    priority: 20
+    description: "에이모바일 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/amobile.yaml"
+    module: "crawlers.amobile_crawler"
+    class: "AmobileCrawler"
+
+  smarter:
+    name: "스마텔"
+    base_url: "https://smartel.kr"
+    enabled: true
+    priority: 21
+    description: "스마텔 (SKT/KT/LGU+)"
+    selectors_file: "config/selectors/smarter.yaml"
+    module: "crawlers.smarter_crawler"
+    class: "SmarterCrawler"
+
+  sugarmobile:
+    name: "슈가모바일"
+    base_url: "https://www.sugarmobile.co.kr"
+    enabled: true
+    priority: 22
+    description: "슈가모바일 (LGU+)"
+    selectors_file: "config/selectors/sugarmobile.yaml"
+    module: "crawlers.sugarmobile_crawler"
+    class: "SugarMobileCrawler"
+
+  asiamobile:
+    name: "아시아모바일"
+    base_url: "https://asiamobile.kr"
+    enabled: true
+    priority: 23
+    description: "아시아모바일 (KT/LGU+)"
+    selectors_file: "config/selectors/asiamobile.yaml"
+    module: "crawlers.asiamobile_crawler"
+    class: "AsiaMobileCrawler"

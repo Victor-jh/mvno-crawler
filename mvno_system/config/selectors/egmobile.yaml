@@ -1,0 +1,15 @@
+selectors:
+  list:
+    item_card: 'div.rate_table table tbody tr'
+    plan_name: 'td:nth-child(1)'
+    data: 'td:nth-child(2)'
+    voice: 'td:nth-child(3)'
+    sms: 'td:nth-child(4)'
+    
+    # Price
+    # Promo price (current) is usually in strong tag
+    price_promo: 'td:nth-child(5) strong'
+    # Original price is usually in span:first-child
+    price_original: 'td:nth-child(5) span:first-child'
+    
+  url: "https://www.egmobile.co.kr/charge/list"

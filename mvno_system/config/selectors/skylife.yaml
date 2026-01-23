@@ -1,0 +1,10 @@
+selectors:
+  list:
+    item_card: 'div.rounded-xl.bg-white'
+    plan_name: 'a[href^="/product/mobile/goods/"]'
+    data: 'span' # 텍스트 필터링 필요 (데이터)
+    voice: 'span' # 텍스트 필터링 필요 (통화)
+    price: '.text-2xl.font-bold'
+    more_btn: 'button:has-text("더보기")'
+    
+  url: "https://www.skylife.co.kr/product/mobile/all"

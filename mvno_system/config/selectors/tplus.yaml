@@ -1,0 +1,13 @@
+selectors:
+  list:
+    item_card: '.listArea .cardArea'
+    plan_name: '.cardBody .title'
+    carrier_badge: '.cardHead .tag i.badge'
+    data: '.cardBody .info .data p span'
+    # Data speed often in 2nd p of data info
+    voice: '.cardBody .info .call span'
+    # Price is in .priceInfo .mainPrice span:nth-child(2) (numeric part)
+    price_num: '.cardBody .priceInfo .mainPrice span:nth-child(2)'
+    more_btn: '#board_paging'
+    
+  url: "https://www.tplusmobile.com/main/rate/join"

@@ -1,0 +1,12 @@
+selectors:
+  list:
+    item_card: '.plan_item'
+    plan_name: '.typography--h4.typography--bold'
+    data: '.typography--h5.typography--medium'
+    # Regular price (original fee)
+    price_original: 'span[id*="originalMonthlyFee"]'
+    # Promo price (current fee)
+    price_current: 'span[id*="currentMonthlyFee"]'
+    
+  url: "https://tossmobile.co.kr/pricing"
+  networks: ["SKT", "KT", "LGU"]

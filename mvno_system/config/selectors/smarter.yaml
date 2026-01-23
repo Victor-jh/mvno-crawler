@@ -1,0 +1,14 @@
+selectors:
+  list:
+    item_card: 'a[href^="/phoneplan/"]'
+    plan_name: 'h1'
+    # Data/Voice/SMS are in p tags, need parsing
+    # Price is large text, likely own element or strong
+    
+    # Navigation/Filters
+    # Tabs are labels with for attribute
+    filter_skt: 'label[for="skt"]' 
+    filter_kt: 'label[for="kt"]'
+    filter_lgu: 'label[for="lg"]'
+    
+  url: "https://smartel.kr/phoneplan"

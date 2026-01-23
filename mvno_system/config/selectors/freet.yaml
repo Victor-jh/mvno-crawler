@@ -1,0 +1,13 @@
+selectors:
+  list:
+    item_card: 'li.plan-item'
+    plan_name: '.plan-top p'
+    carrier_label: 'span.label'
+    data: '.data-info h3'
+    # Voice/SMS usually in ul > li
+    info_list: '.info ul li'
+    price_promo: '.price-info strong'
+    price_original: '.price del'
+    more_btn: 'a.btn-type3'
+    
+  url: "https://www.freet.co.kr/plan/ratePlan"
