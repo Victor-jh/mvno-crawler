@@ -85,7 +85,7 @@ class KTMobileCrawler(BaseCrawler):
                          # 1. Get Basic Info from List (Carrier, Name)
                          basic_data = await card.evaluate("""(card) => {
                             const result = {};
-                            result.carrier = 'KT M Mobile';
+                            result.carrier = 'KT엠모바일';  // Standardized Korean name
                             const nameEl = card.querySelector('strong');
                             result.plan_name = nameEl ? nameEl.innerText : 'Unknown Plan';
                             return result;

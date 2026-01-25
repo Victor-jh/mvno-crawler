@@ -115,7 +115,7 @@ class SkylifeCrawler(BaseCrawler):
                              // Scrape Title
                              const titleEl = document.querySelector('.text-2xl.font-bold, h1, h2');
                              result.plan_name = titleEl ? titleEl.innerText : document.title;
-                             result.carrier = 'Skylife';
+                             result.carrier = '스카이라이프';  // Standardized Korean name
                              
                              // Price
                              const priceEl = document.querySelector('.text-3xl.font-bold, .price'); 

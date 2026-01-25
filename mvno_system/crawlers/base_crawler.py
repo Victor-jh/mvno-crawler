@@ -148,24 +148,89 @@ class BaseCrawler(ABC):
         }
 
         # Carrier Name Normalization (English -> Korean preferred)
-        # This list can be expanded.
+        # Complete list of 23 MVNO carriers with all known variations
         CARRIER_MAP = {
-            'LiivM': '리브모바일',
-            'U+Umobile': '유모바일',
-            'SK7Mobile': 'SK7모바일',
+            # KT엠모바일
+            'KT M Mobile': 'KT엠모바일',
+            'KT M모바일': 'KT엠모바일',
             'KTMobile': 'KT엠모바일',
+            '케이티엠모바일': 'KT엠모바일',
+            
+            # SK세븐모바일
+            'SK 7mobile': 'SK세븐모바일',
+            'SK7Mobile': 'SK세븐모바일',
+            'SK7모바일': 'SK세븐모바일',
+            '에스케이세븐모바일': 'SK세븐모바일',
+            
+            # 유모바일
+            'U+ Umobile': '유모바일',
+            'U+Umobile': '유모바일',
+            'U+유모바일': '유모바일',
+            '유플러스유모바일': '유모바일',
+            
+            # 헬로모바일
+            'Hello Mobile': '헬로모바일',
             'HelloMobile': '헬로모바일',
-            'FreeT': '프리티',
+            'LG헬로모바일': '헬로모바일',
+            
+            # 리브모바일
+            'LiivM': '리브모바일',
+            '리브엠': '리브모바일',
+            'KB리브모바일': '리브모바일',
+            
+            # 토스모바일
+            'Toss Mobile': '토스모바일',
+            'TossMobile': '토스모바일',
+            
+            # 스카이라이프
             'SkyLife': '스카이라이프',
-            'A-Mobile': '에이모바일',
-            'Smile': '스마일게이트',
+            'KT스카이라이프': '스카이라이프',
+            
+            # 프리티
+            'FreeT': '프리티',
+            
+            # 티플러스
             'Tplus': '티플러스',
+            'T+': '티플러스',
+            
+            # 아이즈모바일
+            'Eyes': '아이즈모바일',
+            'Eyes Mobile': '아이즈모바일',
+            
+            # 이야기모바일
             'Story': '이야기모바일',
-            'Snowman': '스노우맨',
-            'Sugar': '슈가모바일',
+            'Eyagi': '이야기모바일',
+            
+            # 모빙
             'Mobing': '모빙',
-            'Eyes': '아이즈모바일'
+            
+            # 이지모바일
+            'EG Mobile': '이지모바일',
+            'EGMobile': '이지모바일',
+            
+            # 에이모바일
+            'A-Mobile': '에이모바일',
+            'AMobile': '에이모바일',
+            
+            # 스마텔
+            'Smarter': '스마텔',
+            'Smartel': '스마텔',
+            
+            # 슈가모바일
+            'Sugar': '슈가모바일',
+            'Sugar Mobile': '슈가모바일',
+            
+            # 아시아모바일
+            'Asia Mobile': '아시아모바일',
+            'AsiaMobile': '아시아모바일',
+            
+            # 스노우맨 (legacy)
+            'Snowman': '스노우맨',
+            
+            # 스마일게이트 (legacy)
+            'Smile': '스마일게이트',
         }
+
 
         # --- Extract Components ---
         carrier = "Unknown"

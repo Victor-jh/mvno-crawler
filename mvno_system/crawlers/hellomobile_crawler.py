@@ -118,7 +118,7 @@ class HelloMobileCrawler(BaseCrawler):
 
                         plan_data = {
                             'platform': self.platform_key,
-                            'carrier': 'HelloMobile',
+                            'carrier': '헬로모바일',  # Standardized Korean name
                             'network': network_badge.strip() if network_badge else 'Unknown',
                             'plan_name': plan_name,
                             'price': detail_data.get('price'),

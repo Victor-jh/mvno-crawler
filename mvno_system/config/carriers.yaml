@@ -1,0 +1,178 @@
+# MVNO Carrier Master Data
+# 23개 알뜰폰 사업자 표준화 데이터
+
+carriers:
+  # === 이통사 자회사 ===
+  ktmmobile:
+    display_name: "KT엠모바일"
+    display_name_en: "KT M Mobile"
+    network: "KT"
+    type: "자회사"
+    
+  sk7mobile:
+    display_name: "SK세븐모바일"
+    display_name_en: "SK 7mobile"
+    network: "SKT"
+    type: "자회사"
+
+  umobile:
+    display_name: "유모바일"
+    display_name_en: "U+ Umobile"
+    network: "LGU+"
+    type: "자회사"
+
+  hellomobile:
+    display_name: "헬로모바일"
+    display_name_en: "Hello Mobile"
+    network: "LGU+"
+    type: "자회사"
+
+  # === 금융/대기업 계열 ===
+  liivm:
+    display_name: "리브모바일"
+    display_name_en: "LiivM"
+    network: "LGU+"  # 주력망
+    type: "금융계열"
+
+  tossmobile:
+    display_name: "토스모바일"
+    display_name_en: "Toss Mobile"
+    network: "KT"  # 주력망
+    type: "금융계열"
+
+  skylife:
+    display_name: "스카이라이프"
+    display_name_en: "SkyLife"
+    network: "KT"
+    type: "방송계열"
+
+  # === 독립 MVNO ===
+  freet:
+    display_name: "프리티"
+    display_name_en: "FreeT"
+    network: "multi"  # SKT/KT/LGU+ 모두 지원
+    type: "독립"
+
+  tplusmobile:
+    display_name: "티플러스"
+    display_name_en: "Tplus"
+    network: "multi"
+    type: "독립"
+
+  eyesmobile:
+    display_name: "아이즈모바일"
+    display_name_en: "Eyes Mobile"
+    network: "multi"
+    type: "독립"
+
+  eyagi:
+    display_name: "이야기모바일"
+    display_name_en: "Eyagi Mobile"
+    network: "multi"
+    type: "독립"
+
+  mobing:
+    display_name: "모빙"
+    display_name_en: "Mobing"
+    network: "multi"
+    type: "독립"
+
+  egmobile:
+    display_name: "이지모바일"
+    display_name_en: "EG Mobile"
+    network: "multi"
+    type: "독립"
+
+  amobile:
+    display_name: "에이모바일"
+    display_name_en: "A-Mobile"
+    network: "multi"
+    type: "독립"
+
+  smarter:
+    display_name: "스마텔"
+    display_name_en: "Smarter"
+    network: "multi"
+    type: "독립"
+
+  sugarmobile:
+    display_name: "슈가모바일"
+    display_name_en: "Sugar Mobile"
+    network: "LGU+"
+    type: "독립"
+
+  asiamobile:
+    display_name: "아시아모바일"
+    display_name_en: "Asia Mobile"
+    network: "multi"
+    type: "독립"
+
+# === 중개 플랫폼 (사업자 아님, 참고용) ===
+aggregators:
+  phoneb:
+    display_name: "폰비"
+  moyo:
+    display_name: "모요"
+  alttelecomhub:
+    display_name: "알뜰폰허브"
+  aldoot:
+    display_name: "알닷"
+  mymvno:
+    display_name: "마이알뜰폰"
+  ayo:
+    display_name: "아요"
+
+# === 이름 변형 매핑 (웹에서 발견되는 다양한 표기) ===
+name_aliases:
+  # KT엠모바일
+  "KT M Mobile": "ktmmobile"
+  "KT M모바일": "ktmmobile"
+  "KT엠모바일": "ktmmobile"
+  "케이티엠모바일": "ktmmobile"
+  
+  # SK세븐모바일
+  "SK 7mobile": "sk7mobile"
+  "SK7모바일": "sk7mobile"
+  "SK세븐모바일": "sk7mobile"
+  "에스케이세븐모바일": "sk7mobile"
+  
+  # 유모바일
+  "U+ Umobile": "umobile"
+  "U+유모바일": "umobile"
+  "유모바일": "umobile"
+  "유플러스유모바일": "umobile"
+  
+  # 헬로모바일
+  "Hello Mobile": "hellomobile"
+  "헬로모바일": "hellomobile"
+  "LG헬로모바일": "hellomobile"
+  
+  # 리브모바일
+  "LiivM": "liivm"
+  "리브엠": "liivm"
+  "리브모바일": "liivm"
+  "KB리브모바일": "liivm"
+  
+  # 토스모바일
+  "Toss Mobile": "tossmobile"
+  "토스모바일": "tossmobile"
+  
+  # 스카이라이프
+  "SkyLife": "skylife"
+  "스카이라이프": "skylife"
+  "KT스카이라이프": "skylife"
+  
+  # 프리티
+  "FreeT": "freet"
+  "프리티": "freet"
+  
+  # 기타
+  "티플러스": "tplusmobile"
+  "아이즈모바일": "eyesmobile"
+  "이야기모바일": "eyagi"
+  "모빙": "mobing"
+  "이지모바일": "egmobile"
+  "에이모바일": "amobile"
+  "스마텔": "smarter"
+  "슈가모바일": "sugarmobile"
+  "아시아모바일": "asiamobile"

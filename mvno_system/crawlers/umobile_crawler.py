@@ -145,7 +145,7 @@ class UMobileCrawler(BaseCrawler):
                         
                         plan_data = {
                             'platform': self.platform_key,
-                            'carrier': 'U+Umobile',
+                            'carrier': '유모바일',  # Standardized Korean name
                             'network': network_badge,
                             'plan_name': plan_name,
                             'price': detail_data.get('price'),

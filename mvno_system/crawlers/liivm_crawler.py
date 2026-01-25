@@ -174,7 +174,7 @@ class LiivMCrawler(BaseCrawler):
                             continue
                             
                         # Default carrier
-                        carrier_name = "LiivM" # KB Liiv M
+                        carrier_name = "리브모바일"  # Standardized Korean name
                         # Network detection (LGU+ or KT or SKT)
                         # LiivM supports LGU+ and KT mostly
                         # Detect from page text

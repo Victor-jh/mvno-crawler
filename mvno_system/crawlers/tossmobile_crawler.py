@@ -54,7 +54,7 @@ class TossMobileCrawler(BaseCrawler):
                             const fullUrl = 'https://tossmobile.co.kr' + href + (href.includes('?') ? '&' : '?') + 'carrier=' + network;
                             
                             const result = {{
-                                'carrier': 'TossMobile (' + network + ')',
+                                'carrier': '토스모바일',  // Standardized Korean name
                                 'url': fullUrl,
                                 'plan_name': item.innerText.split('\\n')[0] // Temporary name for validation
                             }};
@@ -134,7 +134,7 @@ class TossMobileCrawler(BaseCrawler):
                             # Construct Final Data
                             final_data = {
                                 'platform': self.platform_key,
-                                'carrier': plan['carrier'], # Kept from list
+                                'carrier': '토스모바일',  # Standardized Korean name
                                 'plan_name': detail_data.get('plan_name', plan['plan_name']),
                                 'price': detail_data.get('price'),
                                 'data_raw': detail_data.get('data_full', '').replace('\n', ' '),

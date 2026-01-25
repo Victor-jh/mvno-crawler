@@ -75,7 +75,7 @@ class FreeTCrawler(BaseCrawler):
                             else if (label.classList.contains('lg')) network = 'LGU+';
                             else network = label.innerText.trim();
                         }
-                        result.carrier = 'FreeT (' + network + ')';
+                        result.carrier = '프리티';  // Standardized Korean name
                         result.network = network;
                         
                         // Plan Name

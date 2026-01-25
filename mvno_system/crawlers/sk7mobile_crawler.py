@@ -150,7 +150,7 @@ class SK7MobileCrawler(BaseCrawler):
             
             plan_data = {
                 'platform': self.platform_key,
-                'carrier': 'SK 7mobile',
+                'carrier': 'SK세븐모바일',  # Standardized Korean name
                 'network': 'SKT', 
                 'plan_name': final_plan_name,
                 'price': detail_data.get('price'),
