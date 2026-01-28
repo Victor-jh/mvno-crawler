@@ -47,3 +47,9 @@ storage/data/
 
 # Debug dumps
 debug/
+
+# Archive (temporary/unused files)
+archive/
+
+# Reports (generated Excel files)
+reports/
